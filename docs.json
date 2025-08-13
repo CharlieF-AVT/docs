@@ -1,102 +1,103 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Your Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+ "colors": {
+  "primary": "#0D9373",
+  "light": "#07C983",
+  "dark": "#0D9373"
+},
+  "theme": "mint",
+  "topbar": {
+    "style": "default",
+    "cta": {
+      "name": "Get Started",
+      "url": "https://yourapp.com/signup"
+    }
+  },
   "navigation": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "pages": [
+          "quickstart",
+          "development",
+          "navigation"
+        ]
+      },
+      {
+        "anchor": "Community",
+        "icon": "discord",
+        "href": "https://discord.gg/yourserver"
+      }
+    ],
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Getting Started",
+        "icon": "rocket",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
-              "introduction",
+              "index",
               "quickstart",
-              "development"
+              "installation"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Configuration",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "settings",
+              "themes",
+              "navigation"
             ]
           }
         ]
       },
       {
         "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        "icon": "code",
+        "openapi": "/openapi.json"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+    ]
+  },
+  "api": {
+    "playground": {
+      "display": "interactive"
+    },
+    "examples": {
+      "languages": ["curl", "python", "javascript", "go"],
+      "defaultLanguage": "python"
+    },
+    "mdx": {
+      "server": "https://api.yourapp.com",
+      "auth": {
+        "method": "bearer"
+      }
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "og:type": "website",
+      "og:site_name": "Your Documentation",
+      "twitter:card": "summary_large_image"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "twitter": "https://twitter.com/yourhandle",
+      "github": "https://github.com/yourorg",
+      "discord": "https://discord.gg/yourserver"
     }
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
   }
 }
