@@ -22,7 +22,7 @@
 "navigation": {
   "dropdowns": [
     {
-      "dropdown": "Documentation",
+      "dropdown": "ChangeLab Meet",
       "icon": "book-open",
       "pages": [
         "quickstart",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "dropdown": "API References",
+      "dropdown": "ChangeLab Engage",
       "icon": "square-terminal",
       "pages": [
         "api-reference/get",
@@ -39,10 +39,24 @@
         "api-reference/delete"
       ]
     },
-    {
-      "dropdown": "Blog",
-      "href": "https://external-link.com/blog"
-    }
+      {
+      "dropdown": "ChangeLab Coach",
+      "icon": "square-terminal",
+      "pages": [
+        "api-reference/get",
+        "api-reference/post",
+        "api-reference/delete"
+      ]
+    },
+       {
+      "dropdown": "ChangeLab Creator",
+      "icon": "square-terminal",
+      "pages": [
+        "api-reference/get",
+        "api-reference/post",
+        "api-reference/delete"
+      ]
+    },
   ]
 },
   "api": {
