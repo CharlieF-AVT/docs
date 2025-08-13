@@ -19,53 +19,32 @@
       "url": "https://yourapp.com/signup"
     }
   },
-  "navigation": {
-    "anchors": [
-      {
-        "anchor": "Documentation",
-        "icon": "book-open",
-        "pages": [
-          "quickstart",
-          "development",
-          "navigation"
-        ]
-      },
-      {
-        "anchor": "Community",
-        "icon": "discord",
-        "href": "https://discord.gg/yourserver"
-      }
-    ],
-    "tabs": [
-      {
-        "tab": "Getting Started",
-        "icon": "rocket",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "index",
-              "quickstart",
-              "installation"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
-              "settings",
-              "themes",
-              "navigation"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "icon": "code",
-        "openapi": "/openapi.json"
-      }
-    ]
-  },
+"navigation": {
+  "dropdowns": [
+    {
+      "dropdown": "Documentation",
+      "icon": "book-open",
+      "pages": [
+        "quickstart",
+        "development",
+        "navigation"
+      ]
+    },
+    {
+      "dropdown": "API References",
+      "icon": "square-terminal",
+      "pages": [
+        "api-reference/get",
+        "api-reference/post",
+        "api-reference/delete"
+      ]
+    },
+    {
+      "dropdown": "Blog",
+      "href": "https://external-link.com/blog"
+    }
+  ]
+},
   "api": {
     "playground": {
       "display": "interactive"
